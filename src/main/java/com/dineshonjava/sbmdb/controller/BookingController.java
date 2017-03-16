@@ -34,7 +34,7 @@ public class BookingController {
 		booking.setTravelDate(new Date());
 		booking = bookingRepository.save(booking);
 		Map<String, Object> dataMap = new HashMap<String, Object>();
-		dataMap.put("message", "Booking is created successfully !!!");
+		dataMap.put("message", "Booking was created successfully !!!");
 		dataMap.put("status", "1");
 		dataMap.put("booking", booking);
 	    return dataMap;
