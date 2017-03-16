@@ -7,7 +7,7 @@ node
   	}
 	stage('Create Docker Image') 
 	{
-			docker.build("belalansari/abctravals:1")
+			docker.build("belalansari/abctravals:10")
 	}
 	stage('Run Tests') 
 	{
