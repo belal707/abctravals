@@ -15,7 +15,7 @@ node
 		{  
 		    sh "mvn test"
 	        sh "docker login -u belalansari -p zamila1234"
-		    docker.build("belalansari/abctravals:1").push()
+		    docker.build("belalansari/abctravals:10").push()
 			
 		} catch (error)
 		{
