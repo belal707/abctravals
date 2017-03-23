@@ -9,6 +9,10 @@ node
 	{
 			docker.build("belalansari/abctravals:10")
 	}
+	stage('Test Kubectl command')
+	{
+		sh "kubectl get nodes"
+	}
 	stage('Run Tests') 
 	{
 		try 
