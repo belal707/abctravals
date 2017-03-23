@@ -7,7 +7,7 @@ node
   	}
 	stage('Test Kubectl command')
 	{
-		sh "kubectl get nodes"
+		sh 'kubectl get nodes'
 	}
 	/*stage('Create Docker Image') 
 	{
