@@ -7,7 +7,7 @@ node
   	}
 	stage('Test Kubectl command')
 	{
-		sh '/kubernetes/platforms/linux/amd64/kubectl get nodes'
+		sh '/home/ubuntu/kubernetes/platforms/linux/amd64/kubectl get nodes'
 	}
 	/*stage('Create Docker Image') 
 	{
