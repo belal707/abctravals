@@ -5,13 +5,13 @@ node
   	{
      	sh 'mvn clean package -DskipTests'
   	}
-	stage('Create Docker Image') 
-	{
-			docker.build("belalansari/abctravals:10")
-	}
 	stage('Test Kubectl command')
 	{
 		sh "kubectl get nodes"
+	}
+	/*stage('Create Docker Image') 
+	{
+			docker.build("belalansari/abctravals:10")
 	}
 	stage('Run Tests') 
 	{
@@ -25,5 +25,5 @@ node
 		{
 
 		} 
-	}	
+	}*/	
 }
