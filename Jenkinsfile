@@ -5,11 +5,7 @@ node
   	{
      	sh 'mvn clean package -DskipTests'
   	}
-	stage('Test Kubectl command')
-	{
-		sh '/home/ubuntu/kubernetes/platforms/linux/amd64/kubectl get nodes'
-	}
-	/*stage('Create Docker Image') 
+	stage('Create Docker Image') 
 	{
 			docker.build("belalansari/abctravals:10")
 	}
@@ -23,7 +19,11 @@ node
 			
 		} catch (error)
 		{
-
+			println("Error in test stage" + error)
 		} 
-	}*/	
+	}
+	stage('Test Kubectl command')
+	{
+		sh 'kubectl get nodes'
+	}
 }
