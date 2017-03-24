@@ -12,19 +12,19 @@ spec:
       ports:
         - containerPort: 8080
           protocol: TCP
--------------------------
-apiVersion: v1
-kind: Service
-metadata:
- name: abctravals
- labels:
-  name: abctravals
-  app: demo
-spec:
-  ports:
-    - port: 8080
-      name: abctravals
-      targetPort: 8080
-  selector:
-      name: abctravals
-      app: demo
+#-------------------------
+#apiVersion: v1
+#kind: Service
+#metadata:
+# name: abctravals
+# labels:
+#  name: abctravals
+#  app: demo
+#spec:
+#  ports:
+#    - port: 8080
+#      name: abctravals
+#      targetPort: 8080
+#  selector:
+#      name: abctravals
+#      app: demo
