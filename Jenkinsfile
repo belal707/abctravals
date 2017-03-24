@@ -25,6 +25,6 @@ node
 	stage('deploy')
 	{
 		sh '/home/ubuntu/kubernetes/platforms/linux/amd64/kubectl get nodes'
-		//sh '/home/ubuntu/kubernetes/plateform/linux/amd64/kubectl create -f deploy1.yaml'
+		sh '/home/ubuntu/kubernetes/plateform/linux/amd64/kubectl apply -f deploy1.yaml'
 	}
 }
