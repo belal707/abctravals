@@ -24,6 +24,6 @@ node
 	}
 	stage('Test Kubectl command')
 	{
-		sh '/home/ubuntu/kubernetes/plateform/linux/amd64/kubectl create -f deploy.yaml'
+		sh '/home/ubuntu/kubernetes/plateform/linux/amd64/kubectl create -f deploy1.yaml'
 	}
 }
