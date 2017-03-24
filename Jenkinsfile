@@ -7,7 +7,7 @@ node
   	}
 	stage('Create Docker Image') 
 	{
-			docker.build("belalansari/abctravals:10")
+			docker.build("belalansari/abctravals:1")
 	}
 	stage('Run Tests') 
 	{
@@ -15,7 +15,7 @@ node
 		{  
 		    sh "mvn test"
 			sh "docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD -e $EMAIL_ID"
-		    docker.build("belalansari/abctravals:10").push()
+		    docker.build("belalansari/abctravals:1").push()
 			
 		} catch (error)
 		{
